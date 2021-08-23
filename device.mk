@@ -8,7 +8,7 @@
 $(call inherit-product, device/realme/sm7125-common/common.mk)
 
 # Inherit proprietary targets
-$(call inherit-product-if-exists, vendor/realme/RMX2170/RMX2170-vendor.mk)
+$(call inherit-product-if-exists, vendor/realme/RMX2061/RMX2061-vendor.mk)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
