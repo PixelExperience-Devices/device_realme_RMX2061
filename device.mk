@@ -10,9 +10,15 @@ $(call inherit-product, device/realme/sm7125-common/common.mk)
 # Inherit proprietary targets
 $(call inherit-product-if-exists, vendor/realme/RMX2061/RMX2061-vendor.mk)
 
+# Prebuilts
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/dtb.img:dtb.img
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Audio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/dtb.img:dtb.img
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/odm/,$(TARGET_COPY_OUT_ODM)/etc) \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/vendor/,$(TARGET_COPY_OUT_VENDOR)/etc)
