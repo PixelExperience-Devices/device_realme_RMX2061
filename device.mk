@@ -26,3 +26,7 @@ PRODUCT_COPY_FILES += \
 # Display
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/svi_config_19720.xml:$(TARGET_COPY_OUT_VENDOR)/etc/svi_config_19720.xml
+
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
