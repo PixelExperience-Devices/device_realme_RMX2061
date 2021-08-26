@@ -41,7 +41,6 @@ odm/lib/rfsa/adsp/libktvdrc.so
 odm/lib/rfsa/adsp/libarcsoft_portraitSN_hvx_skel.so
 odm/lib/rfsa/adsp/libsnpe_dsp_skel.so
 odm/lib/rfsa/adsp/libktvreverb.so
-odm/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_5221_skel.so
 odm/lib/rfsa/adsp/libvdblurless_skel.so
 odm/lib/rfsa/adsp/libhdr_skel.so
 odm/lib/rfsa/adsp/libarcsoft_portraitsn_hvx_5221_skel.so
@@ -58,6 +57,7 @@ odm/lib/rfsa/adsp/libc++.so.1
 odm/lib/rfsa/adsp/libktvvolume.so
 odm/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so
 odm/lib/rfsa/adsp/libktvpitchshift.so
+odm/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_5221_19720_skel.so
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
 vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so
 vendor/lib/rfsa/adsp/libVC1Dec.so
@@ -96,7 +96,8 @@ vendor/firmware/tfa98xx.cnt
 
 # Camera
 vendor/etc/camera/M_Attribute_AG_BMW_1.1.0.model.hardcode
-odm/etc/camera/stereoParams.bin
+odm/etc/camera/fmwStereoParams.bin
+odm/etc/camera/rmwStereoParams.bin
 odm/etc/camera/anc_cl_kernel.cache
 odm/etc/camera/fdc_cl.cache
 odm/etc/camera/settings_fdc.txt
@@ -106,41 +107,16 @@ odm/etc/camera/gasryuv_1.2_wp.model
 odm/etc/camera/fb_default
 odm/etc/camera/license_release_fdc.lic
 odm/etc/camera/arc_golden_front.bin
-odm/etc/camera/config/hi846
-odm/etc/camera/config/ov02b
 odm/etc/camera/config/oplus_camera_algo_switch_config
-odm/etc/camera/config/imx682
 odm/etc/camera/config/video_beauty_default_config
-odm/etc/camera/config/gc02k0
 odm/etc/camera/config/oplus_camera_config
 odm/etc/camera/config/projectname
-odm/etc/camera/config/ov32a1q
 odm/etc/camera/config/oplus_camera_aps_config
 odm/etc/camera/model/license.lic
 odm/etc/camera/model/DocDetectV15.xbin
 odm/etc/camera/CameraHWConfiguration.config
 odm/etc/camera/FusionBin.dat
 odm/etc/camera/eis_camera.vcfg
-odm/lib/camera/com.qti.sensor.gc02k0.so
-odm/lib/camera/com.qti.sensor.hi846_206B1.so
-odm/lib/camera/com.qti.sensor.ov32a1q.so
-odm/lib/camera/com.qti.sensor.ov02b1b.so
-odm/lib/camera/com.qti.sensor.imx682.so
-odm/lib64/camera/com.qti.sensormodule_206B1.shinetech_ov02b1b.bin
-odm/lib64/camera/com.qti.tuned.sm7125_holitech_gc02k0_206B1.bin
-odm/lib64/camera/com.qti.sensor.gc02k0.so
-odm/lib64/camera/com.qti.tuned.sm7125_shinetech_ov02b1b_206B1.bin
-odm/lib64/camera/com.qti.tuned.sm7125_sunny_ov32a1q_206B1.bin
-odm/lib64/camera/com.qti.sensormodule_206B1.holitech_gc02k0.bin
-odm/lib64/camera/com.qti.sensormodule_206B1.sunny_ov32a1q.bin
-odm/lib64/camera/com.qti.tuned.sm7125_qtech_imx682_206B1.bin
-odm/lib64/camera/com.qti.tuned.sm7125_sunny_hi846_206B1.bin
-odm/lib64/camera/com.qti.sensor.hi846_206B1.so
-odm/lib64/camera/com.qti.sensormodule_206B1.qtech_imx682.bin
-odm/lib64/camera/com.qti.sensor.ov32a1q.so
-odm/lib64/camera/com.qti.sensormodule_206B1.sunny_hi846.bin
-odm/lib64/camera/com.qti.sensor.ov02b1b.so
-odm/lib64/camera/com.qti.sensor.imx682.so
 odm/lib/libarcsoft_super_night_raw.so
 odm/lib/libarcsoft_smart_denoise.so
 odm/lib/libarcsoft_hdr_denoise_api.so
@@ -162,6 +138,37 @@ odm/lib64/libarcsoft_hdr_couple_api.so
 odm/lib64/libarcsoft_distortion_correction.so
 odm/lib64/libarcsoft_lensstaindetection.so
 odm/lib64/libarcsoft_frc.so
+odm/lib64/camera/com.qti.sensor.gc2375h_19721.so
+odm/lib64/camera/com.qti.sensormodule_19721.holitech_gc8054.bin
+odm/lib64/camera/com.qti.sensor.gc8054_19721.so
+odm/lib64/camera/com.qti.tuned.sm7125_qtech_s5k3m5sx_19721.bin
+odm/lib64/camera/com.qti.sensor.imx471_19721.so
+odm/lib64/camera/com.qti.tuned.sm7125_sunny_imx471_19721.bin
+odm/lib64/camera/com.qti.sensor.s5k3m5sx_19721.so
+odm/lib64/camera/com.qti.sensormodule_19721.sunny_imx471.bin
+odm/lib64/camera/com.qti.tuned.sm7125_sunny_hi846_19721.bin
+odm/lib64/camera/com.qti.sensormodule_19721.sunny_s5kgw1.bin
+odm/lib64/camera/com.qti.sensormodule_19721.holitech_gc2375h.bin
+odm/lib64/camera/com.qti.sensor.hi846_19721.so
+odm/lib64/camera/com.qti.sensormodule_19721.sunny_hi846.bin
+odm/lib64/camera/com.qti.sensormodule_19721.qtech_s5k3m5sx.bin
+odm/lib64/camera/com.qti.sensor.s5kgw1_19721.so
+odm/lib64/camera/com.qti.tuned.sm7125_sunny_s5kgw1_19721.bin
+odm/lib64/camera/com.qti.tuned.sm7125_holitech_gc8054_19721.bin
+odm/lib64/camera/com.qti.tuned.No4000k_sm7125_sunny_imx471_19721.bin
+odm/lib64/camera/com.qti.tuned.sm7125_holitech_gc2375h_19721.bin
+odm/lib/camera/com.qti.sensor.gc2375h_19721.so
+odm/lib/camera/com.qti.sensor.gc8054_19721.so
+odm/lib/camera/com.qti.sensor.imx471_19721.so
+odm/lib/camera/com.qti.sensor.s5k3m5sx_19721.so
+odm/lib/camera/com.qti.sensor.hi846_19721.so
+odm/lib/camera/com.qti.sensor.s5kgw1_19721.so
+odm/etc/camera/config/hi846_19721
+odm/etc/camera/config/s5kgw1_19721
+odm/etc/camera/config/gc2375h_19721
+odm/etc/camera/config/imx471_19721
+odm/etc/camera/config/gc8054_19721
+odm/etc/camera/config/s5k3m5sx_19721
 vendor/lib/camera/components/com.qti.node.eisv2.so
 vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so
 vendor/lib/camera/components/com.qti.node.gpu.so
@@ -201,7 +208,6 @@ vendor/lib/camera/components/com.qtistatic.stats.awb.so
 vendor/lib/camera/fdconfigvideo.bin
 vendor/lib/camera/com.qti.tuned.sunny_ov2241.bin
 vendor/lib/camera/com.qti.sensormodule_20261.sunny_ov64.bin
-vendor/lib/camera/com.qti.sensor.hi846.so
 vendor/lib/hw/camera.qcom.so
 vendor/lib/hw/com.qti.chi.override.so
 vendor/lib/libSonyIMX471RmscLibrary.so
@@ -257,7 +263,6 @@ vendor/lib64/camera/components/com.qtistatic.stats.awb.so
 vendor/lib64/camera/fdconfigvideo.bin
 vendor/lib64/camera/com.qti.tuned.sunny_ov2241.bin
 vendor/lib64/camera/com.qti.sensormodule_20261.sunny_ov64.bin
-vendor/lib64/camera/com.qti.sensor.hi846.so
 vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/libSonyIMX471RmscLibrary.so
@@ -368,16 +373,16 @@ odm/etc/samsung1024_amb655uv01_eyeprotect_data.xml
 odm/etc/samsung1024_amb655uv01_srgb_eyeprotect_data.xml
 odm/etc/samsung1024_ams643xf01_eyeprotect_data.xml
 odm/etc/samsung1024_ams643xf01_srgb_eyeprotect_data.xml
-odm/etc/samsung1024_ams643xy01_cinema_eyeprotect_data.xml
-odm/etc/samsung1024_ams643xy01_eyeprotect_data.xml
-odm/etc/samsung1024_ams643xy01_srgb_eyeprotect_data.xml
 
 # dpAP firmware
 vendor/firmware/dpAP_full.mbn
 vendor/firmware/dpAP_mini.mbn
 
 # Fastcharge Firmware
-odm/firmware/fastchg/206b1/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/19720/oplus_vooc_fw.bin
+odm/firmware/fastchg/19721/oplus_vooc_fw.bin
+odm/firmware/fastchg/19726/oplus_vooc_fw.bin
+odm/firmware/fastchg/19728/oplus_vooc_fw.bin
 odm/firmware/fastchg/charging_thermal_config_default.txt
 
 # Fingerprint Goodix
@@ -401,6 +406,19 @@ vendor/lib/libarm_proxy_skel.so
 vendor/lib/libhvx_proxy_stub.so
 vendor/lib64/libarm_proxy_skel.so
 vendor/lib64/libhvx_proxy_stub.so
+odm/lib64/anc.hal.so
+odm/lib/anc.hal.so
+
+# FPC Firmware
+odm/vendor/firmware/a_fp.b00
+odm/vendor/firmware/a_fp.b01
+odm/vendor/firmware/a_fp.b02
+odm/vendor/firmware/a_fp.b03
+odm/vendor/firmware/a_fp.b04
+odm/vendor/firmware/a_fp.b05
+odm/vendor/firmware/a_fp.b06
+odm/vendor/firmware/a_fp.b07
+odm/vendor/firmware/a_fp.mdt
 
 # Goodix Firmware
 odm/vendor/firmware/goodixfp.b00
@@ -440,6 +458,11 @@ vendor/lib/sensors.ssc.so
 vendor/lib64/sensors.ssc.so
 
 # TP Firmware
-odm/firmware/tp/206b1/LIMIT_FT3518_SAMSUNG.img
-odm/firmware/tp/206b1/FW_FT3518_SAMSUNG.img
-odm/firmware/tp/206b1/FW_FT3518_SAMSUNG_FAE.img
+odm/firmware/tp/19721/FW_NT36672C_NF_BOE.img
+odm/firmware/tp/19721/FW_NT36672C_NF_BOE_TEST.bin
+odm/firmware/tp/19721/FW_NT36672C_NF_JDI.img
+odm/firmware/tp/19721/FW_NT36672C_NF_JDI_FAE.img
+odm/firmware/tp/19721/FW_NT36672C_NF_JDI_TEST.bin
+odm/firmware/tp/19721/FW_NT36672C_NF_BOE_FAE.img
+odm/firmware/tp/19721/LIMIT_NT36672C_NF_BOE.img
+odm/firmware/tp/19721/LIMIT_NT36672C_NF_JDI.img
