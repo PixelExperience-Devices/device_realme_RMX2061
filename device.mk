@@ -13,3 +13,6 @@ $(call inherit-product-if-exists, vendor/realme/RMX2061/RMX2061-vendor.mk)
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/dtb.img:dtb.img
