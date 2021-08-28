@@ -373,6 +373,12 @@ odm/etc/samsung1024_amb655uv01_eyeprotect_data.xml
 odm/etc/samsung1024_amb655uv01_srgb_eyeprotect_data.xml
 odm/etc/samsung1024_ams643xf01_eyeprotect_data.xml
 odm/etc/samsung1024_ams643xf01_srgb_eyeprotect_data.xml
+odm/etc/boe_vdo_mode_nt36672c_eyeprotect_data.xml
+odm/etc/boe_vdo_mode_nt36672c_srgb_eyeprotect_data.xml
+odm/etc/jdi_vdo_mode_nt36672c_eyeprotect_data.xml
+odm/etc/jdi_vdo_mode_nt36672c_srgb_eyeprotect_data.xml
+vendor/etc/qdcm_calib_data_nt36672c_fhd_plus_video_mode_dsi_panel.xml
+vendor/etc/qdcm_calib_data_nt36672c_jdi_fhd_plus_video_mode_dsi_panel.xml
 
 # dpAP firmware
 vendor/firmware/dpAP_full.mbn
