@@ -27,6 +27,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/svi_config_19720.xml:$(TARGET_COPY_OUT_VENDOR)/etc/svi_config_19720.xml
 
+# Init scripts
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.RMX2061.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.RMX2061.rc
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
