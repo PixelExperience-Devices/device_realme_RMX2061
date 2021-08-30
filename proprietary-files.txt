@@ -146,7 +146,7 @@ vendor/lib64/hw/sound_trigger.primary.atoll.so
 vendor/firmware/tfa98xx.cnt
 
 # Camera
-vendor/etc/camera/M_Attribute_AG_BMW_1.1.0.model.hardcode
+vendor/etc/camera/M_Attribute_Gender_Age_1.0.model
 odm/etc/camera/fmwStereoParams.bin
 odm/etc/camera/rmwStereoParams.bin
 odm/etc/camera/anc_cl_kernel.cache
@@ -560,8 +560,6 @@ vendor/lib64/vendor.oplus.hardware.commondcs@1.0.so
 
 # Sensors
 vendor/etc/sensors/hals.conf
-vendor/lib/oplus.sensors.ssc.so
-vendor/lib64/oplus.sensors.ssc.so
 vendor/lib/sensors.ssc.so
 vendor/lib64/sensors.ssc.so
 
