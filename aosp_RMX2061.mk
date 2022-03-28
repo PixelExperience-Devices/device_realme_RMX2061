@@ -10,6 +10,9 @@ $(call inherit-product, device/realme/RMX2061/device.mk)
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Target
+TARGET_SUPPORTS_QUICK_TAP := true
+
 # Inherit some common AOSP stuff
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
