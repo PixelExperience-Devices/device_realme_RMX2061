@@ -13,6 +13,9 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # Target
 TARGET_SUPPORTS_QUICK_TAP := true
 
+#AOSP Recovery
+TARGET_USES_AOSP_RECOVERY := true
+
 # Inherit some common AOSP stuff
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
