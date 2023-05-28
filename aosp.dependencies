@@ -13,7 +13,13 @@
   },
   {
     "repository": "vendor_realme_RMX2061",
-    "target_path": "vendor/realme",
+    "target_path": "vendor/realme/RMX2061",
+    "remote": "pixel-devices-blobs",
+    "branch": "thirteen"
+  },
+  {
+    "repository": "vendor_realme_sm7125-common",
+    "target_path": "vendor/realme/sm7125-common",
     "remote": "pixel-devices-blobs",
     "branch": "thirteen"
   }
